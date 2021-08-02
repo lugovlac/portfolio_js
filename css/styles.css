@@ -31,7 +31,7 @@
 #btnStart {
   margin-bottom: 0.75rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #btnStart {
     margin-bottom: 0;
   }
@@ -41,7 +41,7 @@
   color: #444;
   margin-bottom: 0.75rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #btnStand {
     margin-bottom: 0;
   }
