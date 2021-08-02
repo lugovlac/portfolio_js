@@ -1,0 +1,215 @@
+// Página Fernet
+
+.bgE3 {
+    background-color: #e3f2fd;
+}
+
+.mb2 {
+    margin-bottom:2rem;
+}
+
+.invalid-feedback {
+    font-size: .78em;
+}
+
+// Página Juego
+
+.pHeading {
+    font-size:1rem;
+}
+
+.interactCont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 70px;
+    margin-top: .75rem;
+    @media(min-width:992px){
+        flex-wrap: nowrap;
+        margin-top:0;
+    }
+}
+
+#btnStart {
+    margin-bottom: .75rem;
+    @media(min-width:576px){  
+        margin-bottom:0;      
+    }
+}
+
+#btnStand {
+    color:#444;
+    margin-bottom: .75rem;
+    @media(min-width:576px){  
+        margin-bottom:0;      
+    }    
+}
+
+.dial {
+    display:none;
+}
+
+.dialCont {
+    display:none;
+    width: 67%;
+    @media(min-width:518px){  
+        width: 93%;
+    } 
+    @media(min-width:576px){  
+        width: 95%;
+    } 
+    @media(min-width:768px){  
+        width: 69%;
+    } 
+    @media(min-width:1200px){  
+        width: 57%;
+    } 
+    
+}
+
+.btnReplay {
+    position:absolute;
+    //cursor:pointer;
+    z-index:10;    
+    top: 70px;    
+    display:none;
+    width: unset;
+    @media (min-width:568px){
+        top: 28px;
+    }
+    @media (min-width:768px){
+        top:100px;
+    }
+}
+
+.imgWin {
+    max-width: 80px;
+    position: absolute;
+    top: -60px;
+    display:none;
+    @media (min-width:768px){
+        top:0;
+    }
+    @media (min-width:992px){
+        max-width: 100px;
+        bottom: 194px;
+        top:unset;
+    }
+    @media (min-width:1200px){
+        position: relative;
+        bottom: 71px;
+    }
+}
+
+#imgWinJ1 {
+    right: 10%;
+    @media (min-width:768px){
+        right: 5%;
+    }
+    @media (min-width:992px){
+        right:unset;
+    }
+}
+
+#imgWinJ2 {
+    left: 10%;
+    @media (min-width:768px){
+        left: 5%;
+    }    
+    @media (min-width:992px){
+        left: 7px;
+    }
+    @media (min-width:1200px){
+        left:unset;
+    }
+}
+
+.imgCrown {
+    position: absolute;
+    top: -20px;
+    width: 50px;
+    display:none;
+}
+
+#imgCrownJ1 {    
+    left: -20px;
+    transform: rotate(-8deg);    
+}
+
+#imgCrownJ2 {
+    right: -17px;
+    transform: rotate(53deg);
+}
+
+.imgsWinCont {
+    display:none;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    height: 300px;
+}
+
+.imgWin2 {
+    position:relative;
+    display:none;
+}
+
+#imgWin2J1 {
+    right: 40px;
+}
+
+#imgWin2J2 {
+    left: 40px;
+}
+
+#overlay {
+    position: fixed; 
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s;
+    @media screen and (max-width:575px) and (orientation:portrait){
+        display:block;
+    }    
+}
+
+.olContent {
+    position: absolute;
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+
+.rotateDevice {
+    max-width:50%;
+}
+
+.mb2Mob {
+    @media (max-width:575px) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+// Fixes bootstrap
+body {
+    font-size: 1.063rem;    
+}
+
+h2, .h2 {
+    font-size: 2.126rem;
+}
